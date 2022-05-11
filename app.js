@@ -3,7 +3,11 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 8080;
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
+
+if (process.env.NODE_ENV === 'development') {
+    require('dotenv').config();
+}
 
 app.get('/', (req, res) => {
     res.sendFile(path.join( __dirname, './index.html' ));
