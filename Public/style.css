@@ -1,0 +1,23 @@
+body {
+    background-color: mediumaquamarine;
+    color:brown;
+    text-align: center;
+}
+#tester {
+    background-color: green;
+}
+p {
+    color: green;
+  }
+  h1{
+    text-align: center;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.column {
+       float: left;
+       width: 33%;
+}
