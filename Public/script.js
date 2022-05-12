@@ -13,11 +13,12 @@ ideaOne.hidden = true;
 //when calculate button is clicked, do this:
 calc.onclick = () => {
     ideaOne.hidden = false;
-    ideaOne.insertAdjacentHTML("afterend", displayOne(input.get("Paycheck")));
+    // ideaOne.innerHTML(" ");
+    ideaOne.insertAdjacentHTML("afterend", displayOne(paycheck.value));
 }
 //retrieve number from textbox to run function
 const displayOne = (income) => {
-    return `You make $${income}`;
+    return `You make: $${income}`;
 }
 
 // const paycheck = displayOne(input.get("Paycheck"));
